@@ -1,0 +1,139 @@
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+  }
+  
+  .Modal {
+    overflow-y: scroll;
+    position: fixed;
+    max-width: calc(100vw - 48px);
+    max-height: calc(100vh - 24px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+  }
+
+.clock {
+    margin-bottom: 30px;
+}
+
+.time {
+    font-size: 24px;
+    font-weight: bold;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  min-width: 320px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 250px;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+.image {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 5px #7d7c84;
+}
+
+.image:hover {
+  box-shadow: 0 0 0 5px #f7ec59;
+  transform: rotateZ(45deg);
+  transition: transform 300ms;
+}
+
+@media (min-width: 540px) {
+  .container {
+    min-width: 500px;
+    max-width: 900px;
+  }
+
+  .item:nth-child(2n + 1) .image {
+    box-shadow: 0 0 0 5px red;
+  }
+
+  .item:nth-child(2n + 1) .image:hover {
+    box-shadow: 0 0 0 5px #f7ec59;
+    transform: rotateZ(45deg);
+    transition: transform 300ms;
+  }
+}
+
+@media(min-width: 900px) {
+    .container {
+        min-width: 800px;
+        max-width: 900px;
+      }
+
+    .item:nth-child(2n + 1) .image {
+        box-shadow: 0 0 0 5px #7d7c84;
+      }
+
+      .item:nth-child(3n + 1) .image {
+        box-shadow: 0 0 0 5px red;
+      }
+    
+      .item:nth-child(2n + 1) .image:hover {
+        box-shadow: 0 0 0 5px #f7ec59;
+        transform: rotateZ(45deg);
+        transition: transform 300ms;
+      }
+
+      .item:nth-child(3n + 1) .image:hover {
+        box-shadow: 0 0 0 5px #f7ec59;
+        transform: rotateZ(45deg);
+        transition: transform 300ms;
+      }
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttonBlock {
+    margin: 0 auto;
+    width: 100px;
+}
+
+
+/*# sourceMappingURL=index.css.map*/
